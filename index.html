@@ -1,473 +1,320 @@
-<!DOCTYPE html>
-<html lang=zh>
+<!DOCTYPE html >
+<html lang='en'>
+
 <head>
-  <meta charset="utf-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="format-detection" content="telephone=no,email=no,adress=no">
-  <!-- Color theme for statusbar -->
-  <meta name="theme-color" content="#000000" />
-  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
-  <meta http-equiv="window-target" content="_top" />
-  
-  
-  <title>zhyzhyzzz的个人博客</title>
-  <meta name="description" content="前端开发">
-<meta name="keywords" content="zhyzhyzzz">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zhyzhyzzz的个人博客">
-<meta property="og:url" content="http://www.node200.top/index.html">
-<meta property="og:site_name" content="zhyzhyzzz的个人博客">
-<meta property="og:description" content="前端开发">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhyzhyzzz的个人博客">
-<meta name="twitter:description" content="前端开发">
-  <!-- Canonical links -->
-  <link rel="canonical" href="http://www.node200.top/index.html">
-  
-    <link rel="alternate" href="/atom.xml" title="zhyzhyzzz的个人博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-  
-  
-  
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0' />
+    <meta name='format-detection' content='telephone=no,email=no,date=no,address=no'>
+    <link rel='stylesheet' href='./css/chat.css'>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_908333_im2c68gc2hm.css">
+    <title></title>
 </head>
 
-
-<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
-  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-  <div class="slimContent">
-    <div class="navbar-header">
-      
-      
-      <div class="profile-block text-center">
-        <a id="avatar" href="http://node200.top" target="_blank">
-          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
-        </a>
-        <h2 id="name" class="hidden-xs hidden-sm">zhyzhyzzz</h2>
-        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
-        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> 广州, 中国</small>
-      </div>
-      
-      <div class="search" id="search-form-wrap">
-
-    <form class="search-form sidebar-form">
-        <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="搜索" />
-            <span class="input-group-btn">
-                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
-            </span>
-        </div>
-    </form>
-    <div class="ins-search">
-  <div class="ins-search-mask"></div>
-  <div class="ins-search-container">
-    <div class="ins-input-wrapper">
-      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
-      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-    </div>
-    <div class="ins-section-wrapper">
-      <div class="ins-section-container"></div>
-    </div>
-  </div>
-</div>
-
-
-</div>
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
-      <ul class="nav navbar-nav main-nav ">
-        
-        
-        <li class="menu-item menu-item-home">
-          <a href="/.">
-            
-            <i class="icon icon-home-fill"></i>
-            
-            <span class="menu-title">首页</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives">
-            
-            <i class="icon icon-archives-fill"></i>
-            
-            <span class="menu-title">归档</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories">
-            
-            <i class="icon icon-folder"></i>
-            
-            <span class="menu-title">分类</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags">
-            
-            <i class="icon icon-tags"></i>
-            
-            <span class="menu-title">标签</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-links">
-          <a href="/links">
-            
-            <i class="icon icon-friendship"></i>
-            
-            <span class="menu-title">友链</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about">
-            
-            <i class="icon icon-cup-fill"></i>
-            
-            <span class="menu-title">关于</span>
-          </a>
-        </li>
-        
-      </ul>
-      
-	
-    <ul class="social-links">
-    	
-        <li><a href="https://gitee.com/vuevv/events" target="_blank" title="码云" data-toggle=tooltip data-placement=top><i class="icon icon-码云"></i></a></li>
-        
-        <li><a href="https://www.jianshu.com/u/1c70201ef3d4" target="_blank" title="简书" data-toggle=tooltip data-placement=top><i class="icon icon-简书"></i></a></li>
-        
-        <li><a href="https://blog.csdn.net/weixin_38423356" target="_blank" title="CSDN" data-toggle=tooltip data-placement=top><i class="icon icon-CSDN"></i></a></li>
-        
-    </ul>
-
-    </nav>
-  </div>
-</header>
-
-  
-    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    
-      <div class="widget">
-    <h3 class="widget-title">公告</h3>
-    <div class="widget-body">
-        <div id="board">
-            <div class="content">
-                <p>欢迎交流与分享经验!</p>
+<body>
+    <div id='app'>
+        <div class='header'>
+            <div class='header_left'>
+                <i class='iconfont icon-left'></i>
             </div>
+            <div class='header_center'>聊天</div>
+            <div class='header_right'></div>
+        </div>
+        <!-- 聊天记录框 -->
+        <div class="message_list" @click="displayMore">
+            <mt-loadmore :top-method="loadTop" :bottom-all-loaded="allLoaded" ref="loadmore">
+                <div class="chatList">
+                    <div class="chatList_box" v-for="(item,index) in list">
+                        <div class="p1" v-if="item.uid!=userInfo.uid">
+                            <div class="chat_box">
+                                <div class="chat_box_p_src">
+                                    <img src="./image/logo.png" alt="">
+                                </div>
+                                <div class="chat_box_p_msg">
+                                    <i class="iconfont icon-zuosanjiaoxiangzuomianxing"></i>
+                                    <div class="chat_box_p_msg_box" v-if="item.message_type=='text'" v-html="item.message"></div>
+                                    <div class="chat_box_p_msg_box" v-else>
+                                        <img :src="item.message" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p2" v-else>
+                            <div class="chat_box">
+                                <div class="chat_box_p_msg">
+                                    <i class="iconfont icon-yousanjiaoxiangyoumianxing"></i>
+                                    <div class="chat_box_p_msg_box" v-if="item.message_type=='text'" v-html="item.message"></div>
+                                    <div class="chat_box_p_msg_box" v-else>
+                                        <img :src="item.message" alt="">
+                                    </div>
+                                </div>
+                                <div class="chat_box_p_src">
+                                    <img src="./image/zuan.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mt-loadmore>
+        </div>
+        <!-- 聊天记录框 end-->
+        <!-- 聊天输入框 -->
+        <div class="chat_input">
+            <div class="input_box" @click="displayMore">
+                <div class="input_box_left">
+                    <input class="message" type="text" v-model="input">
+                </div>
+                <div class="input_box_right">
+                    <div class="input_box_right_box" @click="sendMessage('text')">
+                        发送
+                    </div>
+                </div>
+            </div>
+            <div class="select_box">
+                <div class="select_box_list">
+                    <i class="iconfont icon-biaoqing"></i>
+                    <emoji-picker @emoji="insert" :search="search" class="emo">
+                        <div class="emoji-invoker" slot="emoji-invoker" slot-scope="{ events }" v-on="events">
+                            <button type="button" style="opacity:0;height: 2rem;width: 3rem" @click="shoeMore(event)"></button>
+                        </div>
+                        <div slot="emoji-picker" slot-scope="{ emojis, insert, display }" class="emo_list">
+                            <div>
+                                <div>
+                                    <input type="text" v-model="search">
+                                </div>
+                                <div class="emojis_box">
+                                    <div v-for="(emojiGroup, category) in emojis" :key="category" class="emojis">
+                                        <h5 v-if="category=='Frequently used'">常用</h5>
+                                        <h5 v-else-if="category=='People'">人物</h5>
+                                        <h5 v-else-if="category=='Nature'">大自然</h5>
+                                        <h5 v-else-if="category=='Objects'">物品</h5>
+                                        <h5 v-else-if="category=='Places'">设施</h5>
+                                        <h5 v-else-if="category=='Symbols'">符号</h5>
+                                        <div class="emojis_span">
+                                            <span v-for="(emoji, emojiName) in emojiGroup" :key="emojiName" @click="insert(emoji)"
+                                                :title="emojiName">{{ emoji }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </emoji-picker>
+                </div>
+                <div class="select_box_list" @click="displayMore" style="position: relative;">
+                    <input type="file" type="file" accept="image/*" @change="update">
+                    <i class="iconfont icon-tupian"></i>
+                </div>
+                <div class="select_box_right" @click="displayMore">
+                    <!-- <div class="select_box_right_box" @click="deltext">
+                        <i class="iconfont icon-dele"></i>
+                    </div> -->
+                </div>
+            </div>
+            <div class="show_box" v-if="more_style"></div>
         </div>
     </div>
-</div>
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue/">vue</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/微信小程序/">微信小程序</a><span class="category-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget-body">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue-cli3/">vue-cli3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微信小程序云开发/">微信小程序云开发</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget-body tagcloud">
-      <a href="/tags/express/" style="font-size: 13px;">express</a> <a href="/tags/javascript/" style="font-size: 14px;">javascript</a> <a href="/tags/nodejs/" style="font-size: 13px;">nodejs</a> <a href="/tags/vue/" style="font-size: 13px;">vue</a> <a href="/tags/vue-cli3/" style="font-size: 13px;">vue-cli3</a> <a href="/tags/微信小程序云开发/" style="font-size: 13px;">微信小程序云开发</a>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget-body">
-      <ul class="recent-post-list list-unstyled no-thumbnail">
-        
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/node/">node</a>
-              </p>
-              <p class="item-title">
-                <a href="/2018/10/18/express_body/" class="title">express 利用 multer 优雅的获取 post 传递的文件和表单数据</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-10-18T03:16:45.251Z" itemprop="datePublished">2018-10-18</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/微信小程序/">微信小程序</a>
-              </p>
-              <p class="item-title">
-                <a href="/2018/10/18/wechat_yun/" class="title">微信小程序云开发初体验</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-10-18T03:14:19.614Z" itemprop="datePublished">2018-10-18</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/vue/">vue</a>
-              </p>
-              <p class="item-title">
-                <a href="/2018/10/18/vue/" class="title">利用vue-cli3快速搭建vue项目详细过程</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-10-18T02:14:20.650Z" itemprop="datePublished">2018-10-18</time>
-              </p>
-            </div>
-          </li>
-          
-      </ul>
-    </div>
-  </div>
-  
-
-    
-  </div>
-</aside>
-
-  
-  <main class="main" role="main">
-  
-  <div class="content article-list">
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/18/express_body/">express 利用 multer 优雅的获取 post 传递的文件和表单数据</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/10/18/express_body/" class="article-date">
-	  <time datetime="2018-10-18T03:16:45.251Z" itemprop="datePublished">10月 18</time>
-	</a>
-</span>
-    
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/node/">node</a>
-  </span>
-
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/express/">express</a>, <a class="article-tag-link" href="/tags/nodejs/">nodejs</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/10/18/express_body/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/18/wechat_yun/">微信小程序云开发初体验</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/10/18/wechat_yun/" class="article-date">
-	  <time datetime="2018-10-18T03:14:19.614Z" itemprop="datePublished">10月 18</time>
-	</a>
-</span>
-    
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/微信小程序/">微信小程序</a>
-  </span>
-
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/javascript/">javascript</a>, <a class="article-tag-link" href="/tags/微信小程序云开发/">微信小程序云开发</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/10/18/wechat_yun/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/18/vue/">利用vue-cli3快速搭建vue项目详细过程</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/10/18/vue/" class="article-date">
-	  <time datetime="2018-10-18T02:14:20.650Z" itemprop="datePublished">10月 18</time>
-	</a>
-</span>
-    
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/vue/">vue</a>
-  </span>
-
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/javascript/">javascript</a>, <a class="article-tag-link" href="/tags/vue/">vue</a>, <a class="article-tag-link" href="/tags/vue-cli3/">vue-cli3</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/10/18/vue/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
-
-    
-  </div>
-
-   
-</main>
-
-  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
-	
-	
-    <ul class="social-links">
-    	
-        <li><a href="https://gitee.com/vuevv/events" target="_blank" title="码云" data-toggle=tooltip data-placement=top><i class="icon icon-码云"></i></a></li>
-        
-        <li><a href="https://www.jianshu.com/u/1c70201ef3d4" target="_blank" title="简书" data-toggle=tooltip data-placement=top><i class="icon icon-简书"></i></a></li>
-        
-        <li><a href="https://blog.csdn.net/weixin_38423356" target="_blank" title="CSDN" data-toggle=tooltip data-placement=top><i class="icon icon-CSDN"></i></a></li>
-        
-    </ul>
-
-    <div class="copyright">
-    	
-        <div class="publishby">
-        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
-        </div>
-    </div>
-</footer>
-  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script>
-window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-</script>
-<script src="/js/plugin.min.js"></script>
-<script src="/js/application.js"></script>
-
-    <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-
-
-
-
-
-   
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-
-
-
-
-
 </body>
-</html>
+<script src='./js/vue.js'></script>
+<script src='./js/jquery.js'></script>
+<script src='./js/mintui.js'></script>
+<script src="./js/vue-emoji-picker.js"></script>
+<script src="./js/axios.js"></script>
+<script type='text/javascript'>
+    Vue.use(EmojiPicker)
+    var ws = new WebSocket("ws://39.108.113.33:7272");
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            input: '',
+            version: "1.5.0",
+            search: '',
+            more_style: false,
+            allLoaded: false,
+            userInfo: {},
+            otherInfo: {},
+            page: 1,
+            before_id: "",
+            p1: {
+                "appid": "10000",
+                "type": "login",
+                "uid": "oasik1Jtiq6Ha8YQgCaQO7ZJZSC4"
+            },
+            p2: {
+                "appid": "10000",
+                "type": "login",
+                "uid": "666660001"
+            },
+            list: []
+        },
+        mounted: function () {
+            this.init()
+        },
+        methods: {
+            init() {
+                $('.mint-loadmore-text').html('加载更多聊天记录...')
+                this.ChatLogin()
+            },
+            // 通信登录初始化
+            ChatLogin(callback) {
+                var that = this
+                if (false) {
+                    this.userInfo = this.p1
+                    this.otherInfo = this.p2
+                } else {
+                    this.userInfo = this.p2
+                    this.otherInfo = this.p1
+                }
+                ws.onopen = function () {
+                    ws.send(JSON.stringify(that.userInfo))
+                };
+                ws.onmessage = function (evt) {
+                    var res = JSON.parse(evt.data)
+                    console.log(res)
+                    if (res.type == "getNotReadList_back") { //获取消息未读列表
+                        // that.list = res.data
+                    } else if (res.type == "login_back") { //登录成功返回
+                        that.get_message_list()
+                    } else if (res.type == "single_chat") { //接收到消息或发送消息成功的回调
+                        Vue.set(that.list, that.list.length, res)
+
+                        setTimeout(function () {
+                            $('.message_list').scrollTop($('.chatList')[0].scrollHeight)
+                        }, 100)
+                    } else if (res.type == "getMessageList_back") { //获取聊天记录
+                        if (res.data.length != 0) {
+                            that.list = res.data.concat(that.list)
+                            that.before_id = res.data[0].id
+                            if (that.page == 1) {
+                                that.$nextTick(function () {
+                                    setTimeout(function () {
+                                        $('.message_list').scrollTop($('.chatList')[0].scrollHeight)
+                                    }, 1000)
+                                })
+                            }
+                            that.page += 1
+                        }
+                    }
+                };
+            },
+            // 上传
+            update(e) {
+                var self = this
+                let file = e.target.files[0]
+                /* eslint-disable no-undef */
+                let param = new FormData() // 创建form对象
+                param.append('file', file, file.name) // 通过append向form对象添加数据
+                param.append('version', this.version) // 添加form表单中其他数据
+                console.log(param.get('file')) // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+                let config = {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                }
+                // 添加请求头
+                axios.post('http://t.gxmp.henghi.com/uri/chat/uploadimage', param, config)
+                    .then(response => {
+                        console.log(response.data.data)
+                        self.sendMessage("image", response.data.data)
+                    }).catch(function (error) {
+                        console.log(error);
+                    });
+            },
+            // 获取未读数
+            getNotReadList() {
+                var get_not_read_list = {
+                    "appid": "10000",
+                    "type": "get_not_read_list",
+                    "uid": this.userInfo.uid,
+                    "to_uid": this.otherInfo.uid
+                }
+                ws.send(JSON.stringify(get_not_read_list))
+            },
+            // 获取信息列表
+            get_message_list() {
+                var get_message_list = {
+                    "appid": "10000",
+                    "type": "get_message_list",
+                    "uid": this.userInfo.uid,
+                    "to_uid": this.otherInfo.uid,
+                    "p": this.page, //页数
+                    "ps": "10",
+                    "before_id": this.before_id
+                }
+                this.$refs.loadmore.onTopLoaded();
+                ws.send(JSON.stringify(get_message_list))
+            },
+            // 发送消息
+            sendMessage(message_type, imgUrl) {
+                if (message_type == "text") {
+                    if (this.input.replace('/(^/s *)| (/s*$)/g', "") == "") {} else {
+                        var messageData = {
+                            "appid": "10000",
+                            "type": "single_chat",
+                            "uid": this.userInfo.uid,
+                            "to_uid": this.otherInfo.uid,
+                            "message_type": message_type,
+                            "message": this.input
+                        }
+                        this.input = ''
+                    }
+                } else {
+                    var messageData = {
+                        "appid": "10000",
+                        "type": "single_chat",
+                        "uid": this.userInfo.uid,
+                        "to_uid": this.otherInfo.uid,
+                        "message_type": message_type,
+                        "message": imgUrl
+                    }
+                }
+                Vue.set(this.list, this.list.length, messageData)
+                setTimeout(function () {
+                    $('.message_list').scrollTop($('.chatList')[0].scrollHeight)
+                }, 100)
+                ws.send(JSON.stringify(messageData))
+
+            },
+            // 获取未读消息数量
+            getnRead() {
+                var getnmsg = {
+                    "appid": "10000",
+                    "type": "get_not_read_count",
+                    "uid": this.userInfo.uid
+                }
+                ws.send(JSON.stringify(getnmsg))
+            },
+            // 加载更多
+            loadTop() {
+                var that = this
+                this.get_message_list()
+            },
+            // 显示表情
+            shoeMore() {
+                this.more_style = true;
+                $('.message_list').css({
+                    "height": "calc(69vh - 5rem)",
+                    "min-height": "calc(69vh - 5rem)"
+                })
+                setTimeout(function () {
+                    $('.message_list').scrollTop($('.chatList')[0].scrollHeight)
+                }, 200)
+
+            },
+            // 隐藏表情
+            displayMore: function () {
+                if (this.more_style) {
+                    this.more_style = false;
+                    $('.message_list').css({
+                        "height": "calc(100vh - 8.5rem)",
+                        "min-height": "calc(100vh - 26vh)"
+                    })
+                    setTimeout(function () {
+                        $('.message_list').scrollTop($('.chatList')[0].scrollHeight)
+                    }, 200)
+                }
+            },
+            insert(emoji) {
+                this.input += emoji
+            }
+        }
+    })
+</script>
